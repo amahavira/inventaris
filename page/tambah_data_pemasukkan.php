@@ -7,7 +7,7 @@ include('header.php');
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2>Tambah data pemasukkan</h2>
+                    <h4 class="mt-4">Tambah data pemasukkan</h4>
                 </div>
                 <div class="col-lg-12">
                     <hr>

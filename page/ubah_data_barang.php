@@ -12,7 +12,7 @@ $data = mysqli_fetch_array($sql);
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2>Detail data barang</h2>
+                    <h4 class="mt-4">Detail data barang</h4>
                 </div>
                 <div class="col-lg-6">
                     <form role="form" method="post" action="">

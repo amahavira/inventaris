@@ -16,7 +16,7 @@ if (@$_SESSION['admin'] || @$_SESSION['user']) {
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Aplikasi Gudang - Registrasi</title>
-        <link href="assets/logo/uii1.png" rel="shortcut icon">
+        <link href="dist/assets/logo/uii1.png" rel="shortcut icon">
         <!-- Bootstrap core CSS-->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom fonts for this template-->

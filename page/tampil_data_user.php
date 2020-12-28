@@ -10,7 +10,7 @@ include('header.php');
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <h2>Data user</h2>
+            <h4 class="mt-4">Data user</h4>
           </div>
           <div class="col-12">
             <div class="card-header">
@@ -54,9 +54,9 @@ include('header.php');
                           }
                           ?>
                         </td>
-                        <td>
-                          <a href="ubah_data_user.php?id=<?php echo $data['id_user']; ?>" class="btn btn-primary"><i class="fa fa-eye fa-fw"></i> Detail </a>
-                          <a onclick="return confirm('Anda yakin ingin Menghapus data ini ?')" href="hapus_data_user.php?id=<?php echo $data['id_user'] ?>" class="btn btn-danger"><i class="fa fa-trash fa-fw"></i> Hapus</a>
+                        <td class="text-center" style="vertical-align: middle;">
+                          <a href="ubah_data_user.php?id=<?php echo $data['id_user']; ?>" class="btn btn-sm btn-primary"><i class="fa fa-eye fa-fw"></i> Ubah </a>
+                          <a onclick="return confirm('Anda yakin ingin Menghapus data ini ?')" href="hapus_data_user.php?id=<?php echo $data['id_user'] ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash fa-fw"></i> Hapus</a>
                         </td>
                       </tr>
                     <?php

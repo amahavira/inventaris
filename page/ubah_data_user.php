@@ -10,7 +10,7 @@ $data = mysqli_fetch_array($sql);
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2>Detail data user</h2>
+                    <h4 class="mt-4">Detail data user</h4>
                 </div>
                 <div class="col-lg-6">
                     <form role="form" method="post" action="">
@@ -53,8 +53,8 @@ $data = mysqli_fetch_array($sql);
                                 <?php
                                 } else if ($data['hak_akses'] == 'user') {
                                 ?>
-                                    <option value="admin">User</option>
-                                    <option value="user">Admin</option>
+                                    <option value="user">User</option>
+                                    <option value="admin">Admin</option>
                                 <?php
                                 }
                                 ?>
@@ -102,14 +102,22 @@ $data = mysqli_fetch_array($sql);
                         $sqlsimpan = mysqli_query($conn, "UPDATE tb_user SET id_user = '$id_user', nm_user = '$nm_user', username = '$user', password = md5('$pass'), pass ='$pass' , alamat = '$alamat', no_telp = '$no_telp', email = '$email', hak_akses = '$hak_akses', aktif = '$aktif' where id_user = '$id' ");
                     ?>
                         <script type="text/javascript">
-                            window.location.href = "ubah_data_user.php?id=<?php echo $id; ?>";
+                            window.location.href = "tampil_data_user.php";
                         </script>
                         <?php
                         if ($sqltambah === false) {
-                            echo "gagal simpan data!";
+                            echo '<script language="javascript">';
+                            echo 'alert("Gagal Simpan Data!")';
+                            echo '</script>';
+                        ?>
+                            <script type="text/javascript">
+                                window.location.href = "ubah_data_user.php?id=<?php echo $id; ?>";
+                            </script>
+                        <?php
                         }
-                    }
-                    if (isset($reset)) {
+                        ?>
+                        }
+                        if (isset($reset)) {
                         ?>
                         <script type="text/javascript">
                             window.location.href = "detail_data_user.php?id=<?php echo $id; ?>";

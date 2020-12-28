@@ -3,7 +3,7 @@ include_once('../config/_koneksi.php');
 include_once('header.php');
 ?>
 <div class="container-fluid">
-  <h2 class="mt-4">Halaman Utama Aplikasi Gudang</h2>
+  <h4 class="mt-4">Halaman Utama Aplikasi Gudang</h4>
   <ol class="breadcrumb mb-4">
     <li class="breadcrumb-item active">Selamat datang di halaman utama aplikasi gudang.</li>
   </ol>

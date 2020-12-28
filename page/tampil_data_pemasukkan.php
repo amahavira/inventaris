@@ -5,7 +5,7 @@ include('header.php');
 <div id="layoutSidenav_content">
   <main>
     <div class="container-fluid">
-      <h2 class="mt-4">Data Transaksi Pemasukan</h2>
+      <h4 class="mt-4">Data Transaksi Pemasukan</h4>
       <div class="row">
         <div class="col-12">
           <div class="card-header">

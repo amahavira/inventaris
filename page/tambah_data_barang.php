@@ -5,7 +5,7 @@ include('header.php');
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid">
-            <h2 class="mt-4">Tambah data barang</h2>
+            <h4 class="mt-4">Tambah data barang</h4>
             <div class="row">
                 <div class="col-lg-6" style="padding-left: 30px; padding-right: 30px;">
                     <?php
