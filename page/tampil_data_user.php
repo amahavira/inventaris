@@ -10,20 +10,20 @@ include('header.php');
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <h4 class="mt-4">Data user</h4>
+            <h4 class="mt-4">Data User</h4>
           </div>
           <div class="col-12">
             <div class="card-header">
-              <i class="fa fa-table"></i> Data user</div>
+              <i class="fa fa-table"></i> Data User</div>
             <div class="card-body">
               <p>
-                <a href="tambah_data_user.php" class="btn btn-success"><i class="fa fa-plus fa-fw"></i> Tambah Data user</a></p>
+                <a href="tambah_data_user.php" class="btn btn-success"><i class="fa fa-plus fa-fw"></i> Tambah Data User</a></p>
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
                       <th>No.</th>
-                      <th>Id user</th>
+                      <th>ID User</th>
                       <th>Nama</th>
                       <th>Hak Akses</th>
                       <th>Status Aktivasi</th>

@@ -7,7 +7,7 @@ include('header.php');
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h4 class="mt-4">Laporan tahunan</h4>
+          <h4 class="mt-4">Laporan Tahunan</h4>
         </div>
         <div class="col-12">
           <hr>
@@ -24,14 +24,14 @@ include('header.php');
           </div>
           <hr>
           <div class="card-header">
-            <i class="fa fa-table"></i> Laporan tahunan
+            <i class="fa fa-table"></i> Laporan Tahunan
           </div>
           <div class="card-body" id="div1">
             <div class="table-responsive">
               <?php
               $tgl = @$_POST['tanggalt'];
               ?>
-              <h4 align="center">Laporan tahunan</h4></br>
+              <h4 align="center">Laporan Tahunan</h4></br>
               <h5 align="center">Tahun <?php echo $tgl; ?></h5>
               <hr>
               <table width="100%" border="1" style="border-collapse: 1;" cellspacing="0">

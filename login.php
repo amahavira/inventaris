@@ -18,11 +18,9 @@ if (@$_SESSION['admin'] || @$_SESSION['user']) {
     <title>Aplikasi gudang - login</title>
     <link href="dist/assets/logo/uii1.png" rel="shortcut icon">
     <!-- Bootstrap core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/styles.css" rel="stylesheet" />
     <!-- Custom fonts for this template-->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin.css" rel="stylesheet">
   </head>
 
   <body style="background-color: #06337b;">

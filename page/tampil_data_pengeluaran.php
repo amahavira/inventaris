@@ -17,15 +17,15 @@ include('header.php');
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>No.</th>
-                      <th>Kode transaksi</th>
-                      <th>Tanggal</th>
-                      <th>Nama barang</th>
-                      <th>Nama</th>
-                      <th>Jumlah</th>
-                      <th>Stok</th>
-                      <th>Jenis Kebutuhan</th>
-                      <th>Opsi</th>
+                      <th class="text-center">No.</th>
+                      <th class="text-center">Kode transaksi</th>
+                      <th class="text-center">Tanggal</th>
+                      <th class="text-center">Nama barang</th>
+                      <th class="text-center">Nama</th>
+                      <th class="text-center">Jumlah</th>
+                      <th class="text-center">Stok</th>
+                      <th class="text-center">Jenis Kebutuhan</th>
+                      <th class="text-center">Opsi</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -35,14 +35,14 @@ include('header.php');
                     while ($data = mysqli_fetch_array($sql)) {
                     ?>
                       <tr>
-                        <td><?php echo $no++ ?></td>
-                        <td><?php echo $data['kd_transaksi'] ?></td>
-                        <td><?php echo $data['tgl_transaksi'] ?></td>
-                        <td><?php echo $data['nm_barang'] ?></td>
-                        <td><?php echo $data['nama'] ?></td>
-                        <td><?php echo $data['jumlah'] ?></td>
-                        <td><?php echo $data['stok'] ?></td>
-                        <td><?php echo $data['kepentingan'] ?></td>
+                        <td class="text-center"><?php echo $no++ ?></td>
+                        <td class="text-center"><?php echo $data['kd_transaksi'] ?></td>
+                        <td class="text-center"><?php echo $data['tgl_transaksi'] ?></td>
+                        <td class="text-center"><?php echo $data['nm_barang'] ?></td>
+                        <td class="text-center"><?php echo $data['nama'] ?></td>
+                        <td class="text-center"><span class="text-danger">-<?php echo $data['jumlah'] ?></span></td>
+                        <td class="text-center"><?php echo $data['stok'] ?></td>
+                        <td class="text-center"><?php echo $data['kepentingan'] ?></td>
                         <td class="text-center" style="vertical-align: middle;">
                           <a onclick="return confirm('Anda yakin ingin Menghapus data ini ?')" href="hapus_data_pengeluaran.php?id=<?php echo $data['kd_transaksi'] ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash fa-fw"></i> Hapus</a>
                         </td>

@@ -7,7 +7,7 @@ include('header.php');
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h4 class="mt-4">Tambah data user</h4>
+                    <h4 class="mt-4">Tambah Data User</h4>
                 </div>
                 <div class="col-lg-12">
                     <?php
@@ -105,21 +105,20 @@ include('header.php');
                     <script type="text/javascript">
                         window.location.href = "tampil_data_user.php";
                     </script>
-                <?php
+                    <?php
                     if ($sqltambah === false) {
                         echo '<script language="javascript">';
                         echo 'alert("Gagal Simpan Data!")';
                         echo '</script>';
-                        ?>
+                    ?>
                         <script type="text/javascript">
                             window.location.href = "tambah_data_user.php";
                         </script>
-                    <?php
+                <?php
                     }
-                    ?>
                 }
-
                 ?>
+
                 <div class="col-lg-12">
                     <hr>
                 </div>

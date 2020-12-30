@@ -39,7 +39,7 @@ include('header.php');
                         <td class="text-center"><?php echo $data['tgl_transaksi'] ?></td>
                         <td class="text-center"><?php echo $data['nm_barang'] ?></td>
                         <td class="text-center"><?php echo $data['nama'] ?></td>
-                        <td class="text-center"><span class="text-success">+<?php echo $data['jumlah'] ?></td>
+                        <td class="text-center"><span class="text-success">+<?php echo $data['jumlah'] ?></span></td>
                         <td class="text-center"><?php echo $data['stok'] ?></td>
                         <td class="text-center" style="vertical-align: middle;">
                           <a onclick="return confirm('Anda yakin ingin Menghapus data ini ?')" href="hapus_data_pemasukkan.php?id=<?php echo $data['kd_transaksi'] ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash fa-fw"></i> Hapus</a>

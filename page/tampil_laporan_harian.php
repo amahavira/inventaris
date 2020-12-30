@@ -7,7 +7,7 @@ include('header.php');
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h4 class="mt-4">Laporan harian</h4>
+          <h4 class="mt-4">Laporan Harian</h4>
         </div>
         <div class="col-12">
           <hr>
@@ -24,7 +24,7 @@ include('header.php');
           </div>
           <hr>
           <div class="card-header">
-            <i class="fa fa-table"></i> Laporan harian
+            <i class="fa fa-table"></i> Laporan Harian
           </div>
           <div class="card-body" id="div1">
             <div class="table-responsive">
@@ -32,7 +32,7 @@ include('header.php');
               $tgl = @$_POST['tanggal'];
               $tgls = date('d m Y');
               ?>
-              <h4 align="center">Laporan harian</h4></br>
+              <h4 align="center">Laporan Harian</h4></br>
               <h5 align="center">Tanggal <?php echo $tgl; ?></h5>
               <hr>
               <table width="100%" border="1" style="border-collapse: 1;" cellspacing="0">

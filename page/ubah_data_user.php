@@ -10,16 +10,16 @@ $data = mysqli_fetch_array($sql);
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h4 class="mt-4">Detail data user</h4>
+                    <h4 class="mt-4">Detail Data User</h4>
                 </div>
                 <div class="col-lg-6">
                     <form role="form" method="post" action="">
                         <div class="form-group">
-                            <label id="mn_pegawai">Id user</label>
+                            <label id="mn_pegawai">ID User</label>
                             <input class="form-control" type="text" value="<?php echo $id; ?>" name="id_user" id="id_user" readonly required>
                         </div>
                         <div class="form-group">
-                            <label id="mn_user">Nama user</label>
+                            <label id="mn_user">Nama User</label>
                             <input class="form-control" type="text" value="<?php echo $data['nm_user'] ?>" name="nm_user" id="nm_user" required>
                         </div>
                         <div class="form-group">
