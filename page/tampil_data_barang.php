@@ -18,14 +18,14 @@ include('header.php');
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
-                    <th>No.</th>
-                    <th>Kode barang</th>
-                    <th>Nama barang</th>
-                    <th>Satuan</th>
-                    <th>Keterangan</th>
-                    <th>Stok</th>
-                    <th>Transaksi</th>
-                    <th>Opsi</th>
+                    <th class="text-center">No.</th>
+                    <th class="text-center">Kode barang</th>
+                    <th class="text-center">Nama barang</th>
+                    <th class="text-center">Satuan</th>
+                    <th class="text-center">Keterangan</th>
+                    <th class="text-center">Stok</th>
+                    <th class="text-center">Tambah/Kurangi Stok</th>
+                    <th class="text-center">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -35,18 +35,18 @@ include('header.php');
                   while ($data = mysqli_fetch_array($sql)) {
                   ?>
                     <tr>
-                      <td><?php echo $no++ ?></td>
-                      <td><?php echo $data['kd_barang'] ?></td>
-                      <td><?php echo $data['nm_barang'] ?></td>
-                      <td><?php echo $data['satuan'] ?></td>
-                      <td><?php echo $data['keterangan'] ?></td>
-                      <td><?php echo $data['stokb'] ?></td>
+                      <td class="text-center"><?php echo $no++ ?></td>
+                      <td class="text-center"><?php echo $data['kd_barang'] ?></td>
+                      <td class="text-center"><?php echo $data['nm_barang'] ?></td>
+                      <td class="text-center"><?php echo $data['satuan'] ?></td>
+                      <td class="text-center"><?php echo $data['keterangan'] ?></td>
+                      <td class="text-center"><?php echo $data['stokb'] ?></td>
                       <td class="text-center" style="vertical-align: middle;">
                         <a href="tambah_data_pemasukkan.php?id=<?php echo $data['kd_barang']; ?>" class="btn btn-sm btn-success"><i class="fa fa-plus fa-fw"></i></a>
                         <a href="tambah_data_pengeluaran.php?id=<?php echo $data['kd_barang']; ?>" class="btn btn-sm btn-warning text-light"><i class="fa fa-minus fa-fw"></i></a>
                       </td>
                       <td class="text-center" style="vertical-align: middle;">
-                        <a href="ubah_data_barang.php?id=<?php echo $data['kd_barang']; ?>" class="btn btn-sm btn-primary"><i class="fa fa-eye fa-fw"></i> Ubah </a>
+                        <a href="ubah_data_barang.php?id=<?php echo $data['kd_barang']; ?>" class="btn btn-sm btn-primary"><i class="fa fa-edit fa-fw"></i> Edit </a>
                         <a onclick="return confirm('Anda yakin ingin Menghapus data ini ?')" href="hapus_data_barang.php?id=<?php echo $data['kd_barang'] ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash fa-fw"></i> Hapus</a>
                       </td>
                     </tr>

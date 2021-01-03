@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2020 at 08:42 PM
+-- Generation Time: Jan 03, 2021 at 01:22 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -41,7 +41,7 @@ CREATE TABLE `tb_barang` (
 --
 
 INSERT INTO `tb_barang` (`kd_barang`, `nm_barang`, `satuan`, `keterangan`, `stokb`) VALUES
-('B0001', 'Pouch Risleting', 'Buah', 'Baru', 973),
+('B0001', 'Pouch Risleting', 'Buah', 'Baru', 983),
 ('B0002', 'Tumbler Kaleng', 'Buah', 'Baru', 49),
 ('B0003', 'Bag Tag', 'Buah', 'Baru', 173),
 ('B0004', 'Tas Serut Kanvas', 'Buah', 'Baru', 136),
@@ -80,7 +80,8 @@ INSERT INTO `tb_transaksi` (`kd_transaksi`, `tgl_transaksi`, `keterangan`, `juml
 ('T00000002', '25 12 2020', 'keluar', 10, 'Aditya Mahavira', 986, 'U002', 'B0001', 'Pameran Internasional'),
 ('T00000003', '26 12 2020', 'keluar', 20, 'Aditya Mahavira', 29, 'U002', 'B0010', 'Pameran Internasional'),
 ('T00000004', '26 12 2020', 'masuk', 20, 'Aditya Mahavira', 49, 'U002', 'B0010', ' Penambahan Stok'),
-('T00000005', '26 12 2020', 'masuk', 20, 'Aditya Mahavira', 69, 'U002', 'B0010', 'Penambahan Stok');
+('T00000005', '26 12 2020', 'masuk', 20, 'Aditya Mahavira', 69, 'U002', 'B0010', 'Penambahan Stok'),
+('T00000006', '02 01 2021', 'masuk', 10, 'Aditya Mahavira', 983, 'U002', 'B0001', 'Penambahan Stok');
 
 -- --------------------------------------------------------
 
@@ -106,10 +107,11 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`id_user`, `nm_user`, `username`, `password`, `pass`, `alamat`, `no_telp`, `email`, `hak_akses`, `aktif`) VALUES
-('U001', 'admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'admincity', '085765324098', 'admin@gmail.com', 'admin', 1),
+('U001', 'admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'admincity 1', '085765324098', 'admin@gmail.com', 'admin', 1),
 ('U002', 'Aditya Mahavira', 'user', 'ee11cbb19052e40b07aac0ca060c23ee', 'user', 'usercity', '085098675345', 'user@user.com', 'user', 1),
-('U003', 'Aditya Steven', 'steven', '6ed61d4b80bb0f81937b32418e98adca', 'steven', 'Wonosobo', '081234234567', 'amahavira@gmail.com', 'user', 0),
-('U004', 'Aditya Steven Mahavira', 'amahavira', 'ae0bfdcc172714349a9e5c5926bacc14', 'amahavira', 'Wonosobo', '081234234567', 'amahavira@gmail.com', 'user', 0);
+('U003', 'Aditya Steven', 'steven', '6ed61d4b80bb0f81937b32418e98adca', 'steven', 'Wonosobo', '081234234567', 'amahavira@gmail.com', 'user', 1),
+('U004', 'Aditya Steven Mahavira', 'amahavira', 'ae0bfdcc172714349a9e5c5926bacc14', 'amahavira', 'Wonosobo', '081234234567', 'amahavira@gmail.com', 'user', 1),
+('U005', 'Steven Austin', 'austin', '229979fce5174c17d4645bf8752dae1e', 'austin', 'Wonosobo', '081234234565', 'austin@gmail.com', 'user', 0);
 
 --
 -- Indexes for dumped tables

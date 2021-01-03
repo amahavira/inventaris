@@ -113,6 +113,7 @@ if (@$_SESSION['admin'] || @$_SESSION['user']) {
                                     <a class="nav-link" href="tampil_laporan_harian.php">Harian</a>
                                     <a class="nav-link" href="tampil_laporan_bulanan.php">Bulanan</a>
                                     <a class="nav-link" href="tampil_laporan_tahunan.php">Tahunan</a>
+                                    <a class="nav-link" href="tampil_laporan_range.php">Range</a>
                                 </nav>
                             </div>
                         </div>
